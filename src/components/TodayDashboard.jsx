@@ -36,10 +36,10 @@ function CollapsibleSection({ title, items, isOpen, onToggle }) {
 
 export default function TodayDashboard({ phase }) {
   const [openSections, setOpenSections] = useState({
-    training: true,
-    fueling: true,
-    recovery: true,
-    avoid: true
+    training: false,
+    fueling: false,
+    recovery: false,
+    avoid: false
   });
 
   if (!phase || !phaseGuidance[phase]) {
