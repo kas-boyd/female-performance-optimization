@@ -1,0 +1,142 @@
+.week-timeline-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.5rem;
+}
+
+.calendar-day {
+  aspect-ratio: 1;
+  padding: 0.5rem;
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.375rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.calendar-day:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.calendar-day.today {
+  background-color: #f9f9f9;
+}
+
+.calendar-day.selected {
+  border-width: 2px;
+  box-shadow: 0 4px 12px rgba(117, 106, 182, 0.2);
+}
+
+.calendar-date {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #2a2a2a;
+  text-align: center;
+}
+
+.calendar-phase {
+  font-size: 0.6875rem;
+  font-weight: 500;
+  padding: 0.25rem 0.375rem;
+  border-radius: 4px;
+  text-align: center;
+  width: 100%;
+}
+
+.timeline-content-below {
+  padding: 1.25rem;
+  background-color: #fafafa;
+  border-radius: 8px;
+  border-top: 3px solid #e5e5e5;
+}
+
+.phase-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #4a4a4a;
+}
+
+.day-guidance {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.guidance-section {
+  font-size: 0.8125rem;
+  line-height: 1.6;
+}
+
+.guidance-section strong {
+  display: block;
+  font-weight: 600;
+  color: #4a4a4a;
+  margin-bottom: 0.5rem;
+}
+
+.guidance-section ul {
+  margin: 0;
+  padding-left: 1.25rem;
+  color: #6a6a6a;
+}
+
+.guidance-section li {
+  margin-bottom: 0.375rem;
+}
+
+@media (max-width: 768px) {
+  .week-timeline-card {
+    gap: 1rem;
+  }
+
+  .calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(70px, 1fr));
+    gap: 0.5rem;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 0.5rem;
+  }
+
+  .calendar-day {
+    min-width: 70px;
+    padding: 0.5rem 0.375rem;
+  }
+
+  .calendar-date {
+    font-size: 0.75rem;
+  }
+
+  .calendar-phase {
+    font-size: 0.625rem;
+    padding: 0.2rem 0.25rem;
+  }
+
+  .timeline-content-below {
+    padding: 1rem;
+  }
+
+  .phase-title {
+    font-size: 0.9375rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .guidance-section {
+    font-size: 0.8125rem;
+  }
+}

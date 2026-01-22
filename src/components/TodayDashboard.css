@@ -1,0 +1,115 @@
+.today-header {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.today-header h2 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2a2a2a;
+}
+
+.phase-badge-large {
+  display: inline-block;
+  padding: 0.375rem 0.875rem;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+}
+
+.today-dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.collapsible-card {
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  background-color: #ffffff;
+  overflow: hidden;
+  transition: box-shadow 0.2s ease;
+}
+
+.collapsible-card:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.collapsible-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.25rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  transition: background-color 0.2s ease;
+}
+
+.collapsible-header:hover {
+  background-color: #f9f9f9;
+}
+
+.collapsible-header h3 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2a2a2a;
+}
+
+.collapse-icon {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #6a6a6a;
+  line-height: 1;
+  min-width: 1.5rem;
+  text-align: center;
+}
+
+.collapsible-content {
+  padding: 0 1.25rem 1.25rem 1.25rem;
+}
+
+.collapsible-content ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+}
+
+.collapsible-content li {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: #4a4a4a;
+  padding-left: 1.5rem;
+  position: relative;
+  list-style: none;
+}
+
+.collapsible-card:nth-child(1) .collapsible-content li::before,
+.collapsible-card:nth-child(2) .collapsible-content li::before,
+.collapsible-card:nth-child(3) .collapsible-content li::before {
+  content: '•';
+  position: absolute;
+  left: 0.5rem;
+  color: #AC87C5;
+  font-weight: bold;
+}
+
+.collapsible-card:nth-child(4) .collapsible-content li::before {
+  content: '•';
+  position: absolute;
+  left: 0.5rem;
+  color: #c85a5a;
+  font-weight: bold;
+}
+

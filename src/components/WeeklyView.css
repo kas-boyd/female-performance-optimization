@@ -1,0 +1,70 @@
+.weekly-view {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.settings-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: 1.5rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  border: 1px solid #e5e5e5;
+}
+
+.settings-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #4a4a4a;
+}
+
+.settings-form input {
+  padding: 0.75rem;
+  border: 1px solid #d0d0d0;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #1a1a1a;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.settings-form input:hover {
+  border-color: #a0a0a0;
+}
+
+.settings-form input:focus {
+  outline: none;
+  border-color: #756AB6;
+  box-shadow: 0 0 0 3px rgba(117, 106, 182, 0.15);
+}
+
+.submit-button {
+  margin-top: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #756AB6;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 0.9375rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.submit-button:hover {
+  background-color: #64589f;
+}
+
+.submit-button:active {
+  background-color: #534880;
+}
+
+.submit-button:focus-visible {
+  outline: 2px solid #756AB6;
+  outline-offset: 2px;
+}
+

@@ -1,0 +1,38 @@
+.phase-selector {
+  margin-bottom:1rem;
+}
+
+.phase-selector label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #4a4a4a;
+  margin-bottom: 0.5rem;
+}
+
+.phase-label-text {
+  display: block;
+  margin-bottom: 0.75rem;
+  text-align: center;
+}
+
+.phase-selector select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #d0d0d0;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #1a1a1a;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.phase-selector select:hover {
+  border-color: #a0a0a0;
+}
+
+.phase-selector select:focus {
+  outline: none;
+  border-color: #756AB6;
+  box-shadow: 0 0 0 3px rgba(117, 106, 182, 0.15);
+}
+
